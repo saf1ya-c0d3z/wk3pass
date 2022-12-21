@@ -1,7 +1,8 @@
 
 var generateBtn = document.querySelector("#generate");
 var characters ='abcdefghijklmnopqrstuvwxyz';
-
+var Ulcharacters ='nopqrstuvwxyzABCDEFGHIJKL';
+var LSCcharacters ='nopqvwxyzABCIJKL*&$#@?%!+~';
 function generateString(length) {
     let result = ' ';
     const charactersLength = characters.length;
@@ -11,7 +12,24 @@ function generateString(length) {
 
     return result;
   }
+  function UlgenerateString(length) {
+    let result = ' ';
+    const charactersLength = Ulcharacters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += Ulcharacters.charAt(Math.floor(Math.random() * charactersLength));
+    }
 
+    return result;
+  }
+  function LSCgenerateString(length) {
+    let result = ' ';
+    const charactersLength = LSCcharacters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += LSCcharacters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+
+    return result;
+  }
 console.log(generateString(5));
 function generatePassword() {
   //define Variable for WHEN prompted for the length of the password (
@@ -37,9 +55,15 @@ if (lowercaseq) {
 
 }
 if (numberq){ 
-  password= password.replace(password.charAt(0),3);
+  password= password.replace(password.charAt(1),6);
   
 } 
+if (uppercaseq) {
+  password = UlgenerateString (passlength);
+}
+if (specialchar) {
+  password = LSCgenerateString (passlength);
+}
 return password
 
 }
