@@ -32,7 +32,7 @@ THEN the password is either displayed in an alert or written to the page
 
 # Screenshot
 
-
+<img src = "Screen Shot 2022-12-22 at 10.02.00 PM.png" width "900px">
 
 # Link
 
