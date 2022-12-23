@@ -32,7 +32,7 @@ THEN the password is either displayed in an alert or written to the page
 
 # Screenshot
 
-![plot](./wk3pass/image/PasswordGenerator.html)
+
 
 # Link
 
