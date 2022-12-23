@@ -32,7 +32,7 @@ THEN the password is either displayed in an alert or written to the page
 
 # Screenshot
 
-<img src = "screenshot.png" width "900px">
+<img width="1440" alt="screenshot" src="https://user-images.githubusercontent.com/118941179/209283478-7eb74306-f8f8-4847-9c05-6ed46c33c085.png">
 
 # Link
 
